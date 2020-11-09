@@ -10,7 +10,7 @@ on:
       #- '**.yml'
 
 jobs:
-  demo:
+  'Reliably Kubernetes Configuration Helper':
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout source code'
