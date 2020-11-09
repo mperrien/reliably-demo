@@ -10,7 +10,7 @@ on:
       #- '**.yml'
 
 jobs:
-  reliably-k8s-helper
+  reliably-k8s-helper:
     name: Reliably Kubernetes Configuration Helper
     runs-on: ubuntu-latest
     steps:
