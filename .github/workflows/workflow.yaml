@@ -1,4 +1,4 @@
-name: Reliably GH workflow demo
+name: Reliably GitHub Action Workflow
 
 on:
   push:
