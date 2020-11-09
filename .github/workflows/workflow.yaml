@@ -10,7 +10,8 @@ on:
       #- '**.yml'
 
 jobs:
-  'Reliably Kubernetes Configuration Helper':
+  reliably-k8s-helper
+    name: Reliably Kubernetes Configuration Helper
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout source code'
