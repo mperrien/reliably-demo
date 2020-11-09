@@ -9,7 +9,7 @@ metadata:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: chaostoolkit
+  name: chaostoolkit2
   labels:
     app: chaostoolkit
 spec:
