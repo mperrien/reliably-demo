@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'manifest.yaml'
-      #- '**.yaml'
+      #- 'manifest.yaml'
+      - '**.yaml'
       #- '**.yml'
 
 jobs:

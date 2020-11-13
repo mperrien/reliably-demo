@@ -1,4 +1,5 @@
 ---
+# test Namespace rules
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -6,6 +7,7 @@ metadata:
   name: namespace
 
 ---
+# test Pod rules
 apiVersion: v1
 kind: Pod
 metadata:
@@ -17,3 +19,14 @@ spec:
   containers:
   - name: chaostoolkit
     image: chaostoolkit:latest
+  - name: anothercontainer
+    image: untaggedimage
+
+---
+# test Ingress rules
+apiVersion: v1
+kind: Ingress
+metadata:
+  name: myingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
