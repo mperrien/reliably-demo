@@ -1,7 +1,8 @@
 name: Reliably GitHub Action Workflow
 
 on:
-  pull_request:
+  # pull_request:
+  push:
     branches:
       - main
     paths:
