@@ -30,12 +30,18 @@ metadata:
   name: myingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: foo.bar.com
 
 ---
 # Another Ingress with same name as in other manifest
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: myingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata:
+#   name: myotheringress
+#   annotations:
+#     nginx.ingress.kubernetes.io/rewrite-target: /
+# spec:
+#   rules:
+#   - host: foo.bar.com
