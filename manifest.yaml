@@ -24,16 +24,7 @@ spec:
 
 ---
 # test Ingress rules
-apiVersion: v1
-kind: Ingress
-metadata:
-  name: myingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-
----
-# Another Ingress with same name
-apiVersion: v1
+apiVersion: apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: myingress
