@@ -1,4 +1,12 @@
 ---
+# test Namespace rules
+apiVersion: v1
+kind: Namespace
+metadata:
+  # name: reliably
+  name: namespace
+
+---
 # Another Ingress with same name as in other manifest
 apiVersion: extensions/v1beta1
 kind: Ingress
